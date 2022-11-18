@@ -1,11 +1,13 @@
-import { AppProps } from 'next/app';
+import { AppInitialProps } from 'next/app';
 import { ThemeProvider } from 'styled-components';
 
+import { GlobalStyles } from '../styles/global-styles';
 import { theme } from '../styles/theme';
 
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
+      <GlobalStyles />
       <Component {...pageProps} />
     </ThemeProvider>
   );
@@ -13,4 +15,4 @@ function MyApp({ Component, pageProps }) {
 
 export default MyApp;
 
-MyApp.propTypes = AppProps;
+MyApp.propTypes = AppInitialProps;

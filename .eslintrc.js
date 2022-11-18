@@ -26,6 +26,7 @@ module.exports = {
     'no-promise-executor-return': 'off',
     'no-unused-vars': 'off',
     'no-shadow': 'off',
+    'react/forbid-prop-types': 'off',
     'react/function-component-definition': [
       'error',
       {
